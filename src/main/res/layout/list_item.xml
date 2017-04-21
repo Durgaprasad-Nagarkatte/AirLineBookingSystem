@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/airLineName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="18dp"
+        tools:text="Air Indido"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/airLineName"
+        android:layout_marginEnd="41dp"
+        tools:text="3400"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        tools:text="BEN"
+        android:layout_below="@+id/airLineName"
+        android:layout_toEndOf="@+id/airLineName" />
+
+    <TextView
+        android:id="@+id/dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/src"
+        android:layout_marginEnd="38dp"
+        android:layout_toStartOf="@+id/price"
+        tools:text="DEL" />
+
+    <TextView
+        android:id="@+id/dept_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="(3:30)"
+        android:layout_below="@+id/src"
+        android:layout_alignStart="@+id/src" />
+
+    <TextView
+        android:id="@+id/arrival_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dest"
+        android:layout_below="@+id/dest"
+        android:text="(7:30)" />
+
+
+</RelativeLayout>

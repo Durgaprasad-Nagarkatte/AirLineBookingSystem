@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.akshay.flightbooking.BookActivity">
+
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="36dp"
+        android:text="From :"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/fromAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/from_hint"
+        android:layout_below="@+id/fromText"
+        android:layout_alignStart="@+id/fromText" />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="To :"
+        android:textSize="24sp"
+        android:layout_below="@+id/fromAddress"
+        android:layout_alignStart="@+id/fromAddress" />
+
+    <EditText
+        android:id="@+id/toAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toText"
+        android:layout_below="@+id/toText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Delhi" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:textSize="24sp"
+        android:layout_below="@+id/toAddress"
+        android:layout_alignStart="@+id/toAddress" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dateText"
+        android:layout_below="@+id/dateText"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="01/01/2017"/>
+
+    <TextView
+        android:id="@+id/passengerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/number_of_passengers"
+        android:layout_below="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <EditText
+        android:id="@+id/passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="2"
+        android:layout_below="@+id/passengerText"
+        android:layout_alignStart="@+id/passengerText" />
+
+    <Button
+        android:id="@+id/confirmBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passenger"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/confirm_booking" />
+
+
+</RelativeLayout>

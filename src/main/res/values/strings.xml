@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">"FlightBooking "</string>
+    <string name="book_ticket">Book Ticket</string>
+    <string name="view_booking">View Booking</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="from_address">From :</string>
+    <string name="from_hint">Bengaluru</string>
+    <string name="number_of_passengers">Number of passengers :</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="final_message">Your flight has been booked</string>
+</resources>
